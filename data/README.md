@@ -2,6 +2,22 @@
 
 ## Processed competition dataset
 
+### Colab-ready file
+
+For the student notebook, use the pre-combined CSV below:
+
+| File | Description | Data rows | Columns |
+|---|---|---:|---:|
+| `climate_all.csv` | All Thailand and Korea locations combined, with `Country`, `Location`, `Date`, and `Month` already added | 149,508 | 13 |
+
+This file is intended for direct loading from Google Drive:
+
+```python
+df_climate_all = pd.read_csv(".../Climate/data/climate_all.csv", parse_dates=["Date"])
+```
+
+The original city-level source files are kept in `THA/` and `KOR/` for reference.
+
 ### Dataset summary for competition administrators
 
 Row counts below exclude the CSV header line.
